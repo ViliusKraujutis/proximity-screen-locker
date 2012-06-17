@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Proximity Screen Locking</string>
+    <string name="main_enable_admin">Enable Admin</string>
+    <string name="main_service_is_not_running">Service is not running.</string>
+    <string name="main_service_is_running">Service is running.</string>
+    <string name="main_start_service">Start service</string>
+    <string name="main_force_lock">Force Lock</string>
+    <string name="main_stop_service">Stop service</string>
+    <string name="main_uninstall_message">In case you\'ll need to uninstall this app, please remove it from admins first.\nPlease go here to do so: Settings->Security->Device administrators</string>
+    <string name="main_remove_from_admins">Remove from admins</string>
+    <string name="main_device_admin_description">This app needs admin rights to be able to lock the screen when it\'s in the pocket or bag, etc.</string>
+
+</resources>
