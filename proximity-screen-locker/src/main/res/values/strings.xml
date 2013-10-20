@@ -8,8 +8,9 @@
     <string name="main_start_service">Start service</string>
     <string name="main_force_lock">Force Lock</string>
     <string name="main_stop_service">Stop service</string>
-    <string name="main_uninstall_message">In case you\'ll need to uninstall this app, please remove it from admins first.\nPlease go here to do so: Settings->Security->Device administrators</string>
+    <string name="main_uninstall_message">Admin apps are managed here: Settings->Security->Device administrators</string>
     <string name="main_remove_from_admins">Remove from admins</string>
     <string name="main_device_admin_description">This app needs admin rights to be able to lock the screen when it\'s in the pocket or bag, etc.</string>
+    <string name="toast_no_proximity_sensor_found">No proximity sensors found. Please make sure your device has this hardware feature.</string>
 
 </resources>
