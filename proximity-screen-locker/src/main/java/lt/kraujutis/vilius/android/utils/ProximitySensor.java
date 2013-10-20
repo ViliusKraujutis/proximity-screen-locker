@@ -18,10 +18,14 @@ public class ProximitySensor {
 		Log.d(TAG, "constructor");
 
 		SensorManager mSensorManager = (SensorManager) context.getSystemService(Service.SENSOR_SERVICE);
-		Sensor sensor = mSensorManager.getSensorList(Sensor.TYPE_PROXIMITY).get(0);
-		SensorEventListener listener = new MySensorEventListener();
-		mSensorManager.registerListener(listener, sensor, SensorManager.SENSOR_DELAY_FASTEST);
-	}
+		try{
+            Sensor sensor = mSensorManager.getSensorList(Sensor.TYPE_PROXIMITY).get(0);
+            SensorEventListener listener = new MySensorEventListener();
+            mSensorManager.registerListener(listener, sensor, SensorManager.SENSOR_DELAY_FASTEST);
+        }catch (IndexOutOfBoundsException e){
+            Log.
+        }
+    }
 
 	public static ProximitySensor getInstance(Context context) {
 		if (mProximitySensor == null) {
