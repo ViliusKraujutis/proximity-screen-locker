@@ -12,6 +12,7 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.TextView;
 
+import lt.kraujutis.vilius.android.utils.AppSharedPreferences;
 import lt.kraujutis.vilius.android.utils.ServiceUtils;
 
 public class ScreenLockerActivity extends Activity implements OnClickListener {
@@ -57,12 +58,14 @@ public class ScreenLockerActivity extends Activity implements OnClickListener {
         Intent serviceIntent = new Intent(this, ScreenLockerService.class);
         stopService(serviceIntent);
         showIfServiceIsRunning();
+        AppSharedPreferences.setAutoStart(this, false);
     }
 
     private void startScreenLockerService() {
         Intent serviceIntent = new Intent(this, ScreenLockerService.class);
         startService(serviceIntent);
         showIfServiceIsRunning();
+        AppSharedPreferences.setAutoStart(this, true);
     }
 
     public void enableAdmin() {
