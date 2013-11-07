@@ -30,12 +30,13 @@ public class ScreenLockerService extends Service {
             @Override
             public void onReceive(final Context context, Intent intent) {
                 try {
-                    if (!ProximitySensor.isFar(context)) {
+                    ProximitySensor proximitySensor = ProximitySensor.getInstance(context);
+                    if (proximitySensor.hasProximitySensorHardware() && proximitySensor.isClose()) {
                         Log.d(TAG, "lock");
                         if (CallStatus.isCallStateIdle(context)) {
                             ScreenLock.lockScreen(context);
+                            Vibration.vibrate(context);
                         }
-                        Vibration.vibrate(context);
                     }
                 } catch (Exception e) {
                     Log.d(TAG, "Exception occurred: " + e);
@@ -57,5 +58,4 @@ public class ScreenLockerService extends Service {
         super.onDestroy();
         unregisterReceiver(receiver);
     }
-
 }
