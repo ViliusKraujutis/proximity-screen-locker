@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Proximity Screen Locking</string>
+    <string name="app_name">Proximity Screen Locker</string>
     <string name="main_enable_admin">Enable Admin</string>
     <string name="main_service_is_not_running">Service is not running.</string>
     <string name="main_service_is_running">Service is running.</string>
@@ -12,5 +12,8 @@
     <string name="main_remove_from_admins">Remove from admins</string>
     <string name="main_device_admin_description">This app needs admin rights to be able to lock the screen when it\'s in the pocket or bag, etc.</string>
     <string name="toast_no_proximity_sensor_found">No proximity sensors found. Please make sure your device has this hardware feature.</string>
+    <string name="device_admin_enabled_message">App \'Proximity Screen Locker\' is enabled as Device Admin.</string>
+    <string name="device_admin_disable_requested_message">Disabling device admin right for \'%1$s\' requested.</string>
+    <string name="device_admin_disabled_message">Admin rights are disabled for the app called: \'%1$s\'.</string>
 
 </resources>

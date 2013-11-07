@@ -15,10 +15,10 @@ import android.widget.TextView;
 import lt.kraujutis.vilius.android.utils.AppSharedPreferences;
 import lt.kraujutis.vilius.android.utils.ServiceUtils;
 
-public class ScreenLockerActivity extends Activity implements OnClickListener {
+public class MainActivity extends Activity implements OnClickListener {
 
     static final int RESULT_ENABLE = 1;
-    protected static final String TAG = ScreenLockerActivity.class.getCanonicalName();
+    protected static final String TAG = MainActivity.class.getCanonicalName();
 
     DevicePolicyManager mDPM;
     ComponentName mDeviceAdminReceiver;
@@ -33,7 +33,7 @@ public class ScreenLockerActivity extends Activity implements OnClickListener {
         findViewById(R.id.main_disableAdmin_b).setOnClickListener(this);
 
         mDPM = (DevicePolicyManager) getSystemService(Context.DEVICE_POLICY_SERVICE);
-        mDeviceAdminReceiver = new ComponentName(ScreenLockerActivity.this, ScreenLockerDeviceAdminReceiver.class);
+        mDeviceAdminReceiver = new ComponentName(MainActivity.this, ScreenLockerDeviceAdminReceiver.class);
         enableAdmin();
     }
 
@@ -84,7 +84,7 @@ public class ScreenLockerActivity extends Activity implements OnClickListener {
     public void disableAdmin() {
         Log.d(TAG, "disableAdmin");
         mDPM.removeActiveAdmin(mDeviceAdminReceiver);
-        // mDPM.removeActiveAdmin(new ComponentName(ScreenLockerActivity.this,
+        // mDPM.removeActiveAdmin(new ComponentName(MainActivity.this,
         // ScreenLockerDeviceAdminReceiver.class));
     }
 

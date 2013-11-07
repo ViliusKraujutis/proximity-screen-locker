@@ -13,7 +13,7 @@ import lt.kraujutis.vilius.android.screenlocker.R;
 
 public class ProximitySensor {
 
-	private static final String TAG = ProximitySensor.class.getCanonicalName();
+    private static final String TAG = ProximitySensor.class.getCanonicalName();
     private static ProximitySensor mProximitySensor;
     public float value;
 

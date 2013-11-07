@@ -7,10 +7,12 @@ import android.content.Intent;
 import lt.kraujutis.vilius.android.utils.AppSharedPreferences;
 
 /**
+ * Will start the service automatically after device reboot.
+ *
  * @author Vilius Kraujutis viliusk@gmail.com
  * @since 2013-10-20 20:45
  */
-public class RebootReceiver extends BroadcastReceiver {
+public class RebootBroadcastReceiver extends BroadcastReceiver {
     @Override
     public void onReceive(Context context, Intent intent) {
         boolean autoStart = AppSharedPreferences.isAutoStart(context);
