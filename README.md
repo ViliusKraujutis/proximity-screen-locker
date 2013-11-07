@@ -23,4 +23,6 @@ To test if it works you need to lock your phone, cover the Proximity sensor (top
 This app REQUIRES your ADMIN rights on the phone to lock the screen. It's the way Android architecture is created. And it's good, because you always know when this app is enabled to lock the screen and when it's not.
 NOTE, that you need to remove this app from admins before you can uninstall it. Please go here to do so: Settings->Security->Device administrators
 
-Sources are here: https://github.com/ViliusKraujutis/Proximity-Screen-Locker
+[Sources are here: https://github.com/ViliusKraujutis/Proximity-Screen-Locker](https://github.com/ViliusKraujutis/Proximity-Screen-Locker)
+
+[Google Play: https://play.google.com/store/apps/details?id=lt.kraujutis.vilius.android.screenlocker](https://play.google.com/store/apps/details?id=lt.kraujutis.vilius.android.screenlocker "Google Play Store link")
