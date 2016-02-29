@@ -1,7 +1,10 @@
 Proximity-Screen-Locker
 =======================
 
-Proximity Screen Locker
+## Deprecated (for now)
+It was unpublished from Google Play, because of [this issue](https://github.com/ViliusKraujutis/proximity-screen-locker/issues/2).
+
+## Proximity Screen Locker
 
 
 This Open Source app will ensure, that your screen is locked when in pocket or bag.
